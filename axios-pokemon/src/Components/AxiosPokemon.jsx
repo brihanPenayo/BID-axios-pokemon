@@ -5,7 +5,7 @@ const AxiosPokemon = () => {
     const [listPoke, setListPoke] = useState([]);
 
     const handleClick = () => {
-        axios.get('https://pokeapi.co/api/v2/pokemon?limit=807').then(response => {
+        axios.get('https://pokeapi.co/api/v2/pokemon?limit=1500').then(response => {
             let aux = response.data.results;
             let list = []
             aux.map((results) => {
